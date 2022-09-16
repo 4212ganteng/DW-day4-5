@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+    <title>My Project</title>
+</head>
+<body>
+    <nav>
+  
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="assets/image/logo2.png" alt="logo dumbways">
+
+                </li>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="sec-1">
+        <form action="" onsubmit="getId(event)">
+            <h2>ADD MY PROJECT</h2>
+    
+            <div class="">
+                <label for="name">Project Name</label>
+                <input type="text" id="name">
+            </div>
+    
+            <div class="date container">
+                <div class="left">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="right">
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date">
+                </div>
+            </div>
+    
+            <div class="">
+                <label for="desc">Description</label>
+                <textarea id="desc" cols="30" rows="5"></textarea>
+            </div>
+    
+            <div class="technologies container">
+                <label for="" onsubmit="checkbox()">Technologies</label>
+                <table >
+                    <tr>
+                        <td class="tes" > 
+                            <input type="checkbox" id="node" name="tech" value="node">
+                            <label for="node">Node js</label>
+                        </td>
+                        <td> 
+                            <input type="checkbox" id="react" name="tech" value="react">
+                            <label for="react">React js</label>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="vue" name="tech" value="vuejs">
+                            <label for="vue">Vue</label>
+                        </td>
+    
+                        <td>
+                            <input type="checkbox" id="laravel" name="tech" value="laravel">
+                            <label for="laravel">Laravel</label>
+                        </td>
+    
+                    </tr>
+                </table>
+            </div>
+            <div class="">
+                <label for="">Upload Image</label>
+                <div class="gambar">
+                    <label for="image">
+                        <p>Chose file</p>
+                        <i class="ri-attachment-2"></i>
+                    </label>
+                    <input type="file" id="image" hidden>
+                </div>
+            </div>
+            <div class="button">
+                <button>Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+<div class="wrapper">
+        <h2>MY PROJECT</h2>
+        <div id="container">
+        <div class="card">
+            <div class="wrapper-content">
+                <img src="assets/image/1.jpg" alt="" width="100%">
+                <h3>ini nama project</h3>
+                <span>Durasi : ini durasi</span>
+                <div class="content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus accusamus quas veniam cum ea
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-golang"></i>
+                    <i class="fa-brands fa-vuejs"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                </div>
+
+                <div class="buton2">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="assets/js/project.js"></script>
+</body>
+</html>

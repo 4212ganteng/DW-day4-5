@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color:#E2E6EA;
+}
+
+*{
+    text-decoration: none;
+}
+
+nav{
+    height: 10vh;
+    background-color: #F4F3F3;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display:flex ;
+    list-style-type:none ;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+
+}
+
+nav ul li img{
+    width: 60%;
+}
+.nav-left {
+   flex: 50%;  
+}
+.nav-left a{ 
+   color: black;
+}
+
+.nav-right{
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+.nav-right a{
+    background-color: orangered;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 5px;
+
+}
